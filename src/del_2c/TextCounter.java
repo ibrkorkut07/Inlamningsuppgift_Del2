@@ -1,4 +1,4 @@
-package del_01c;
+package del_1c;
 
 public class TextCounter {
     private int lineCount = 0;

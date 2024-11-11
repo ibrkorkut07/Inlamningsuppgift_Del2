@@ -1,4 +1,4 @@
-package del_2;
+package del_2_MainMethod;
 
 import java.util.Scanner;
 

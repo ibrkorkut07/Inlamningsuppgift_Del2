@@ -1,4 +1,4 @@
-package del_2;
+package del_2_MainMethod;
 
 public class TextCounter {
     private int lineCount;

@@ -18,18 +18,18 @@ public class TextCounterTest_Del3 {
 
     @Test
     public void testMultipleLinesWithStop() {
-        counter.processInput(Arrays.asList("Hello world", "This is a test", "stop"));
-        counter.printResultsPart3();  // Should print lines, characters, words, and longest word
+        counter.processInput(Arrays.asList("Hello, my name is Ibrahim", "Testing multiple lines", "stop"));
+        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
         assertEquals(2, counter.getLineCount(), "Expected line count to be 2");
-        assertEquals(25, counter.getCharacterCount(), "Expected character count to be 25");
-        assertEquals(6, counter.getWordCount(), "Expected word count to be 5");
-        assertEquals("Hello", counter.getLongestWord(), "Expected longest word to be 'Hello'");
+        assertEquals(47, counter.getCharacterCount(), "Expected character count to be 47");
+        assertEquals(8, counter.getWordCount(), "Expected word count to be 8");
+        assertEquals("multiple", counter.getLongestWord(), "Expected longest word to be 'multiple'");
     }
 
     @Test
     public void testImmediateStop() {
         counter.processInput(Collections.singletonList("stop"));
-        counter.printResultsPart3();  // Should print lines, characters, words, and longest word as 0
+        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
         assertEquals(0, counter.getLineCount(), "Expected line count to be 0");
         assertEquals(0, counter.getCharacterCount(), "Expected character count to be 0");
         assertEquals(0, counter.getWordCount(), "Expected word count to be 0");
@@ -38,11 +38,11 @@ public class TextCounterTest_Del3 {
 
     @Test
     public void testSingleLineWithoutStop() {
-        counter.processInput(Collections.singletonList("Only one line here"));
-        counter.printResultsPart3();  // Should print 1 line, 18 characters, 4 words, and longest word "Only"
+        counter.processInput(Collections.singletonList("Testing only one line"));
+        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
         assertEquals(1, counter.getLineCount(), "Expected line count to be 1");
-        assertEquals(18, counter.getCharacterCount(), "Expected character count to be 18");
+        assertEquals(21, counter.getCharacterCount(), "Expected character count to be 18");
         assertEquals(4, counter.getWordCount(), "Expected word count to be 4");
-        assertEquals("Only", counter.getLongestWord(), "Expected longest word to be 'Only'");
+        assertEquals("Testing", counter.getLongestWord(), "Expected longest word to be 'Testing'");
     }
 }

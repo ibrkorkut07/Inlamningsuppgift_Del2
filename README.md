@@ -13,7 +13,7 @@ InputReader: Manages input/output with the user.
 
 TextStats: Keeps track of the character and line counts.
 
-Part 3 - Extended Features (dds more functionality) 
+Part 3 - Extended Features (more functionality) 
 
 The program:
 Counts and displays the total number of words.
@@ -22,7 +22,7 @@ Identifies and displays the longest word entered.
 Updated Structure:
 InputReader: Continues to handle user interaction.
 
-TextStats: Now also counts words, identifies the longest word, and checks for "stop."
+TextStats: Now also counts words, identifies the longest word and checks for "stop."
 
 Testing
 JUnit tests verify:

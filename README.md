@@ -10,6 +10,7 @@ Displays the total number of characters and lines (excluding the line with "stop
 
 Structure:
 InputReader: Manages input/output with the user.
+
 TextStats: Keeps track of the character and line counts.
 
 Part 3 - Extended Features (dds more functionality) 

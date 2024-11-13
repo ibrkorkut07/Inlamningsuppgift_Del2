@@ -21,6 +21,7 @@ Identifies and displays the longest word entered.
 
 Updated Structure:
 InputReader: Continues to handle user interaction.
+
 TextStats: Now also counts words, identifies the longest word, and checks for "stop."
 
 Testing

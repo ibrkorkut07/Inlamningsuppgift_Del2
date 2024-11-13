@@ -17,7 +17,7 @@ public class TextCounterTest_Del3 {
     @Test
     public void testMultipleLinesWithStop() {
         counter.processInput(Arrays.asList("Hello, my name is Ibrahim", "Testing multiple lines", "stop"));
-        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
+        counter.printResultsPart3();  // prints number of lines, characters, words and longest word
         assertEquals(2, counter.getLineCount(), "Expected line count to be 2");
         assertEquals(47, counter.getCharacterCount(), "Expected character count to be 47");
         assertEquals(8, counter.getWordCount(), "Expected word count to be 8");
@@ -27,7 +27,7 @@ public class TextCounterTest_Del3 {
     @Test
     public void testImmediateStop() {
         counter.processInput(Collections.singletonList("stop"));
-        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
+        counter.printResultsPart3();  // prints number of lines, characters, words and longest word
         assertEquals(0, counter.getLineCount(), "Expected line count to be 0");
         assertEquals(0, counter.getCharacterCount(), "Expected character count to be 0");
         assertEquals(0, counter.getWordCount(), "Expected word count to be 0");
@@ -37,7 +37,7 @@ public class TextCounterTest_Del3 {
     @Test
     public void testSingleLineWithoutStop() {
         counter.processInput(Collections.singletonList("Testing only one line"));
-        counter.printResultsPart3();  // prints prints  number of lines, characters, words and longest word
+        counter.printResultsPart3();  // prints number of lines, characters, words and longest word
         assertEquals(1, counter.getLineCount(), "Expected line count to be 1");
         assertEquals(21, counter.getCharacterCount(), "Expected character count to be 18");
         assertEquals(4, counter.getWordCount(), "Expected word count to be 4");

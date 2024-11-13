@@ -1,4 +1,4 @@
-                                                                    Command Line Text Reader
+                                                        Command Line Text Reader
 
 This project is a command-line program that reads user input until the word "stop" is entered. After "stop" is typed, the program summarizes the input with specific statistics.
 
@@ -13,6 +13,7 @@ InputReader: Manages input/output with the user.
 TextStats: Keeps track of the character and line counts.
 
 Part 3 - Extended Features (dds more functionality) 
+
 The program:
 Counts and displays the total number of words.
 Identifies and displays the longest word entered.
